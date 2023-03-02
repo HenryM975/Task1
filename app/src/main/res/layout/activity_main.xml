@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="113dp"
+        android:text="Sign in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <EditText
+        android:id="@+id/searchFirstName"
+        android:layout_width="320dp"
+        android:layout_height="34dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/montserrat"
+        android:hint="First name"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInText" />
+
+    <EditText
+        android:id="@+id/searchLastName"
+        android:layout_width="320dp"
+        android:layout_height="34dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edittext"
+        android:hint="Search"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchFirstName" />
+
+    <EditText
+        android:id="@+id/searchEmail"
+        android:layout_width="320dp"
+        android:layout_height="34dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/edittext"
+        android:hint="Search"
+        android:padding="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchLastName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSignIn"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bluebutton"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchEmail"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/textHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Already have an account?"
+        app:layout_constraintTop_toBottomOf="@id/buttonSignIn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:selectableItemBackground"
+        android:text="Sign in"
+        android:textColor="@color/blueText"
+        app:layout_constraintStart_toEndOf="@id/textHaveAccount"
+        app:layout_constraintTop_toBottomOf="@id/buttonSignIn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGoogle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="4dp"
+        android:background="?android:selectableItemBackground"
+        android:text="Sign in"
+        android:textColor="@color/blueText"
+        app:layout_constraintTop_toBottomOf="@id/textHaveAccount"
+        android:drawableLeft="@drawable/google"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonApple"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginTop="4dp"
+        android:background="?android:selectableItemBackground"
+        android:text="Sign in"
+        android:textColor="@color/blueText"
+        app:layout_constraintTop_toBottomOf="@id/buttonGoogle"
+        android:drawableLeft="@drawable/apple"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
