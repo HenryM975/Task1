@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteX="167dp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="157dp"
@@ -46,7 +46,7 @@
         android:text="Change photo"
         android:textColor="#818181"
         android:textSize="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPhoto"
         tools:layout_editor_absoluteX="144dp" />
 
     <TextView
@@ -68,8 +68,13 @@
         android:layout_marginEnd="43dp"
         android:background="@drawable/bluebutton"
         android:drawableLeft="@drawable/Upload"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="52dp"
+        android:paddingRight="79dp"
         android:text="Upload item"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,23 +83,266 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonTradeStore"
-        android:layout_width="292dp"
+        android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_margin="15dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="43dp"
-        android:background="@drawable/whitebutton"
+        android:background="?android:selectableItemBackground"
         android:drawableLeft="@drawable/wallet"
         android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
         android:paddingRight="5dp"
-        android:text="Upload item"
+        android:text="Trade store"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPaymentMethon"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/wallet"
+        android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text="Payment method"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTradeStore"
         app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBalance"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/wallet"
+        android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text="Balance"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPaymentMethon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonTradeHistory"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/wallet"
+        android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text="Trade history"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBalance"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRestorePurchase"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/wallet"
+        android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text="Restore Purchase"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTradeHistory"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonHelp"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/wallet"
+        android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text="Help"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestorePurchase"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogOut"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="43dp"
+        android:background="?android:selectableItemBackground"
+        android:drawableLeft="@drawable/wallet"
+        android:drawableRight="@drawable/arrowright"
+        android:fontFamily="@font/montserrat"
+        android:gravity="left|center_vertical"
+        android:paddingRight="5dp"
+        android:text="Log out"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHelp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Menu"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_marginStart="30dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/menuhome"
+                android:paddingStart="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonHealth"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="25dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/menuhealth"
+                android:paddingStart="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/buttonHome"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="25dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/menucart"
+                android:paddingStart="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/buttonHealth"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMessage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="25dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/menumessage"
+                android:paddingStart="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/buttonCart"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonProfile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="25dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/menuprofile"
+                android:paddingStart="8dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/buttonMessage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

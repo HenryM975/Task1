@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNavigationMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:layout_marginStart="40dp"
+                android:background="?android:selectableItemBackground"
+                android:drawableLeft="@drawable/navigationmenu"
+                android:paddingStart="4dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="103dp"
+                android:text="Trade by bata"
+                app:layout_constraintStart_toEndOf="@+id/buttonNavigationMenu"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/imageViewPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:srcCompat="@drawable/AdhiPhoto"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <EditText
+                android:id="@+id/searchText"
+                android:layout_width="320dp"
+                android:layout_height="34dp"
+                android:layout_margin="30dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/search"
+                android:gravity="center|center_vertical"
+                android:hint="What are you looking for ?"
+                android:padding="7dp"
+                android:paddingRight="10dp"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/buttonNavigationMenu"
+                tools:layout_editor_absoluteX="45dp" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizont1"
+                android:layout_width="900dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/searchText">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="900dp"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Category0button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/bncategory"
+                        android:drawableTop="@drawable/phoneicon"
+                        android:paddingTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="3dp" />
+
+                    <TextView
+                        android:id="@+id/imageEllipse0text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Phones"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/Category0button" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Category1button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="21dp"
+                        android:background="@drawable/bncategory"
+                        android:drawableTop="@drawable/headphonesicon"
+                        android:paddingTop="10dp"
+                        app:layout_constraintStart_toEndOf="@id/Category0button"
+                        tools:layout_editor_absoluteY="0dp" />
+
+
+                    <TextView
+                        android:id="@+id/imageEllipse1text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Headphones"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toEndOf="@id/imageEllipse0text"
+                        app:layout_constraintTop_toBottomOf="@id/Category1button" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Category2button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="21dp"
+                        android:background="@drawable/bncategory"
+                        android:drawableTop="@drawable/gamesicon"
+                        android:paddingTop="10dp"
+                        app:layout_constraintStart_toEndOf="@id/Category1button"
+                        tools:layout_editor_absoluteY="0dp" />
+
+
+                    <TextView
+                        android:id="@+id/imageEllipse2text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Games"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toEndOf="@id/imageEllipse1text"
+                        app:layout_constraintTop_toBottomOf="@id/Category2button" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Category3button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="21dp"
+                        android:background="@drawable/bncategory"
+                        android:drawableTop="@drawable/caricon"
+                        android:paddingTop="10dp"
+                        app:layout_constraintStart_toEndOf="@id/Category2button" />
+
+
+                    <TextView
+                        android:id="@+id/imageEllipse3text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Cars"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toEndOf="@id/imageEllipse2text"
+                        app:layout_constraintTop_toBottomOf="@id/Category3button" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Category4button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="21dp"
+                        android:background="@drawable/bncategory"
+                        android:drawableTop="@drawable/sleepicon"
+                        android:paddingTop="10dp"
+                        app:layout_constraintStart_toEndOf="@id/Category3button" />
+
+                    <TextView
+                        android:id="@+id/imageEllipse4text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Furniture"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toEndOf="@id/imageEllipse3text"
+                        app:layout_constraintTop_toBottomOf="@id/Category4button" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Category5button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_marginStart="21dp"
+                        android:background="@drawable/bncategory"
+                        android:drawableTop="@drawable/roboicon"
+                        android:paddingTop="10dp"
+                        app:layout_constraintStart_toEndOf="@id/Category4button" />
+
+                    <TextView
+                        android:id="@+id/imageEllipse5text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Kids"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toEndOf="@id/imageEllipse4text"
+                        app:layout_constraintTop_toBottomOf="@id/Category4button" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textLatest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                android:text="Latest"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizont1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonViewAll"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="236dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:selectableItemBackground"
+                android:text="View all"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@id/textLatest"
+                app:layout_constraintTop_toBottomOf="@id/horizont1" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/horizont2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textLatest">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <!--0-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/HotSales0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/hotsaleslayout0"
+                            android:layout_width="114dp"
+                            android:layout_height="149dp"
+                            android:background="@drawable/product">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/hotsalesnew0"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_margin="15dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="16dp"
+                                android:background="?android:selectableItemBackground"
+                                android:textColor="@color/white"
+                                android:textSize="10dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hotsalesname0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="12dp"
+                                android:text="..."
+                                android:textColor="@color/white1"
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalesnew0" />
+
+                            <TextView
+                                android:id="@+id/hotsalessubtitle0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="4dp"
+                                android:text="..."
+                                android:textColor="@color/white1"
+                                android:textSize="11dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalesname0" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/hotsalesbuy0"
+                                android:layout_width="103dp"
+                                android:layout_height="23dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="12dp"
+                                android:background="?android:selectableItemBackground"
+                                android:text="Buy Now"
+                                android:textSize="8dp"
+                                app:circularflow_defaultRadius="10dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalessubtitle0" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--1-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/HotSales1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintStart_toEndOf="@id/HotSales0">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/hotsaleslayout1"
+                            android:layout_width="114dp"
+                            android:layout_height="149dp"
+                            android:background="@drawable/product">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/hotsalesnew1"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_margin="15dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="16dp"
+                                android:background="?android:selectableItemBackground"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hotsalesname1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="12dp"
+                                android:text="..."
+                                android:textColor="@color/white1"
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalesnew1" />
+
+                            <TextView
+                                android:id="@+id/hotsalessubtitle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="4dp"
+                                android:text="..."
+                                android:textColor="@color/white1"
+                                android:textSize="11dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalesname1" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/hotsalesbuy1"
+                                android:layout_width="103dp"
+                                android:layout_height="23dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="12dp"
+                                android:background="?android:selectableItemBackground"
+                                android:text="Buy Now"
+                                android:textSize="8dp"
+                                app:circularflow_defaultRadius="10dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalessubtitle1" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!--2-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/HotSales2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintStart_toEndOf="@id/HotSales1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/hotsaleslayout2"
+                            android:layout_width="114dp"
+                            android:layout_height="149dp"
+                            android:background="@drawable/product">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/hotsalesnew2"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_margin="15dp"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="16dp"
+                                android:background="?android:selectableItemBackground"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hotsalesname2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="12dp"
+                                android:text="..."
+                                android:textColor="@color/white1"
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalesnew2" />
+
+                            <TextView
+                                android:id="@+id/hotsalessubtitle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="4dp"
+                                android:text="..."
+                                android:textColor="@color/white1"
+                                android:textSize="11dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalesname2" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/hotsalesbuy2"
+                                android:layout_width="103dp"
+                                android:layout_height="23dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="12dp"
+                                android:background="?android:selectableItemBackground"
+                                android:text="Buy Now"
+                                android:textSize="8dp"
+                                app:circularflow_defaultRadius="10dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/hotsalessubtitle2" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textFlashSale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="4dp"
+                android:text="Latest"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizont2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonViewAll1"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="236dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:selectableItemBackground"
+                android:text="View all"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@id/textLatest"
+                app:layout_constraintTop_toBottomOf="@id/horizont2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
