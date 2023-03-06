@@ -13,7 +13,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="28dp"
         android:background="?android:selectableItemBackground"
-        android:drawableTop="@drawable/Back"
+        android:drawableTop="@drawable/back"
         android:paddingTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
         android:layout_marginTop="19dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/AdhiPhoto" />
+        app:srcCompat="@drawable/adhiphoto" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/viewAll0"
@@ -67,7 +67,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="43dp"
         android:background="@drawable/bluebutton"
-        android:drawableLeft="@drawable/Upload"
+        android:drawableLeft="@drawable/upload"
         android:fontFamily="@font/montserrat"
         android:paddingLeft="52dp"
         android:paddingRight="79dp"
@@ -261,84 +261,73 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonHome"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_margin="15dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginEnd="50dp"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/menuhome"
                 android:paddingStart="8dp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+                app:layout_constraintEnd_toStartOf="@+id/buttonHealth"
+                tools:layout_editor_absoluteY="16dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonHealth"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_margin="15dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/menuhealth"
                 android:paddingStart="8dp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toEndOf="@id/buttonHome"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/buttonCart"
+                tools:layout_editor_absoluteY="16dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonCart"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_margin="15dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="25dp"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/menucart"
                 android:paddingStart="8dp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toEndOf="@id/buttonHealth"
-                app:layout_constraintTop_toTopOf="parent" />
+                tools:layout_editor_absoluteX="190dp"
+                tools:layout_editor_absoluteY="16dp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonMessage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_margin="15dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="16dp"
                 android:background="?android:selectableItemBackground"
                 android:drawableLeft="@drawable/menumessage"
                 android:paddingStart="8dp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toEndOf="@id/buttonCart"
+                app:layout_constraintStart_toEndOf="@+id/buttonCart"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonProfile"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_margin="15dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="25dp"
-                android:background="?android:selectableItemBackground"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/bncategory"
                 android:drawableLeft="@drawable/menuprofile"
                 android:paddingStart="8dp"
+                android:paddingLeft="10dp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toEndOf="@id/buttonMessage"
+                app:layout_constraintStart_toEndOf="@+id/buttonMessage"
                 app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

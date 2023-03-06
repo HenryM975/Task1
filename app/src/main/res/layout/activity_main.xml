@@ -11,14 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
+        android:layout_marginTop="121dp"
         android:layout_marginEnd="113dp"
         android:text="Sign in"
+        android:textColor="@color/black"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <EditText
         android:id="@+id/searchFirstName"
@@ -89,46 +91,56 @@
         android:id="@+id/textHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="12dp"
         android:text="Already have an account?"
-        app:layout_constraintTop_toBottomOf="@id/buttonSignIn"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSignIn" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonLogIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="14dp"
         android:layout_margin="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="?android:selectableItemBackground"
-        android:text="Sign in"
+        android:text="Log in"
+        android:textAllCaps="false"
         android:textColor="@color/blueText"
+        android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@id/textHaveAccount"
         app:layout_constraintTop_toBottomOf="@id/buttonSignIn" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonGoogle"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="167dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="76dp"
         android:background="?android:selectableItemBackground"
-        android:text="Sign in"
-        android:textColor="@color/blueText"
-        app:layout_constraintTop_toBottomOf="@id/textHaveAccount"
-        android:drawableLeft="@drawable/google"/>
+        android:drawableLeft="@drawable/google"
+        android:gravity="center"
+        android:text="Sign in with Google"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonApple"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="169dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="15dp"
         android:background="?android:selectableItemBackground"
-        android:text="Sign in"
-        android:textColor="@color/blueText"
-        app:layout_constraintTop_toBottomOf="@id/buttonGoogle"
-        android:drawableLeft="@drawable/apple"/>
+        android:drawableLeft="@drawable/apple"
+        android:gravity="center"
+        android:text="Sign in with Apple"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoogle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

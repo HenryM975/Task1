@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
+
     <TextView
         android:id="@+id/signInText"
         android:layout_width="wrap_content"
@@ -12,12 +13,14 @@
         android:layout_marginStart="112dp"
         android:layout_marginEnd="113dp"
         android:text="Welcome back"
+        android:textSize="24sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintVertical_bias="0.266" />
 
     <EditText
         android:id="@+id/searchFirstName"
@@ -52,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@id/searchFirstName" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonSignIn"
+        android:id="@+id/buttonLogIn"
         android:layout_width="289dp"
         android:layout_height="46dp"
         android:layout_margin="15dp"
@@ -60,14 +63,13 @@
         android:layout_marginTop="99dp"
         android:layout_marginEnd="43dp"
         android:background="@drawable/bluebutton"
-        android:text="Sign in"
+        android:text="Login"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchPassword"
-        app:layout_constraintVertical_bias="0.035" />
-
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
